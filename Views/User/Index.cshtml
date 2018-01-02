@@ -1,0 +1,55 @@
+﻿
+@{
+Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录 - 皮皮图书</title>
+    <link rel="stylesheet" type="text/css" href="~/css/loginstyle.css" />
+</head>
+<body>
+    <img class="logo" src="~/image/loginlogo.png" width="155" height="70" />
+    <div class="Login">
+        <form action="~/User/Login" method="post">
+
+            <p style="font: 20px/100%  '黑体','Microsoft yahei',Arial, Helvetica, sans-serif;margin:15px;">密码登录</p>
+            <div>
+                <p>
+                    <i class="ico_user"></i>  <!--用户登录账户框图标-->
+                    <label for="username" class="uname" style="content:icon;icon:url('image/user.png')"></label>
+                    <input class="username" name="account" required="required" type="text" placeholder="邮箱/昵称/手机号" />
+                </p>
+            </div>
+            <p>
+                <i class="ico_password"></i> <!--用户登录密码框图标-->
+                <label for="password" class="youpasswd"> </label>
+                <input id="password" name="password" required="required" type="password" placeholder="密码" />
+            </p>
+            <p class="keeplogin" style="font: 16px/100%  '黑体';font-weight: 500;">
+                <!--记住密码-->
+                <label for="username" class="uname" style="content:icon;icon:url('image/user.png')"></label>
+                <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                <label for="loginkeeping">记住密码！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;找回密码？</label>  <!--记住密码、找回密码（未做）功能-->
+            </p>
+            <p>
+                <!--登录按钮-->
+                <input class="login_button" type="submit" value="登 录" />
+            </p>
+            <p class="change_link" style="font: 16px/100%  '黑体'; font-weight: 500;">
+                使用合作网站登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;立即注册      <!--合作网站登录支付宝、QQ等（未做）,注册功能-->
+                <a href="#toregister" class="to_register">Join us</a>
+            </p>
+            <p style="text-align: left; margin-left: 34px; ">
+                <img src="~/image/qq_ico.png" />
+                <img src="~/image/wechat_ico.png" />
+                <img src="~/image/sinaweibo_ico.png" />
+                <img src="~/image/alipay_ico.png" />
+            </p>
+        </form>
+    </div>
+</body>
+</html>
